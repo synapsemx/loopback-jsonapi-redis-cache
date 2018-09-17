@@ -1,14 +1,14 @@
 {
-  "name": "loopback-redis-cache",
-  "version": "1.0.8",
-  "description": "Redis cache for loopback.io",
+  "name": "loopback-jsonapi-redis-cache",
+  "version": "1.0.0",
+  "description": "Redis cache with a JSON API payload for Loopback",
   "main": "rediscache.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vkatsar/loopback-redis-cache.git"
+    "url": "git+https://github.com/synapsemx/loopback-jsonapi-redis-cache.git"
   },
   "keywords": [
     "loopback",
@@ -22,14 +22,16 @@
     "redis",
     "cache"
   ],
-  "author": "Vassileios Katsaris",
+  "author": "SynapseMX, Inc",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vkatsar/loopback-redis-cache/issues"
+    "url": "https://github.com/synapsemx/loopback-jsonapi-redis-cache/issues"
   },
-  "homepage": "https://github.com/vkatsar/loopback-redis-cache#readme",
+  "homepage": "https://github.com/synapsemx/loopback-jsonapi-redis-cache#readme",
   "dependencies": {
     "redis": "^2.7.1",
-    "redis-delete-pattern": "^0.1.0"
+    "redis-delete-pattern": "^0.1.0",
+    "loopback-jsonapi-model-serializer": "^1.0.1",
+    "debug": "^3.1.0"
   }
 }

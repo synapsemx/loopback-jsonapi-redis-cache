@@ -1,3 +1,5 @@
+import _debug from './debug';
+
 /* Mixin name: 'RedisCache' (case-sensitive)
  * Purpose: Cache every GET request with our cache query param
  *          Invalidate cache on every create, update, delete, or ttl expiration
@@ -10,12 +12,18 @@
  *             }
  *           }
  */
+const debug = _debug();
+const warn = _debug(); // create a namespaced warning
+warn.log = console.warn.bind(console); // eslint-disable-line no-console
+
 const redis = require('redis');
 const redisDeletePattern = require('redis-delete-pattern');
 const serialize = require('loopback-jsonapi-model-serializer');
-const debug = require('debug')('loopback:mixin:jsonapi-redis-cache');
 
 module.exports = function(Model, options) {
+  debug('jsonapi-redis-cache mixin for Model %s', Model.modelName);
+  debug('options', options);
+
   var clientSettings;
   if (options && options.client) {
     clientSettings = options && options.client;

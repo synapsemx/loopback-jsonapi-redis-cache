@@ -2,7 +2,7 @@
   "name": "loopback-jsonapi-redis-cache",
   "version": "1.0.1",
   "description": "Redis cache with a JSON API payload for Loopback",
-  "main": "rediscache.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,6 +1,6 @@
 {
   "name": "loopback-jsonapi-redis-cache",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Redis cache with a JSON API payload for Loopback",
   "main": "rediscache.js",
   "scripts": {

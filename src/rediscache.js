@@ -21,7 +21,7 @@ const redisDeletePattern = require('redis-delete-pattern');
 const serialize = require('loopback-jsonapi-model-serializer');
 
 module.exports = function(Model, options) {
-  debug('jsonapi-redis-cache mixin for Model %s', Model.modelName);
+  debug('jsonapi-redis-mixin for Model %s', Model.modelName);
   debug('options', options);
 
   var clientSettings;

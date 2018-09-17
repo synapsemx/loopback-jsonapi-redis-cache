@@ -1,4 +1,4 @@
-# loopback-jsonapi-redis-cache
+# loopback-jsonapi-redis-mixin
 Mixin for Loopback that provides a Redis cache using the JSON API payload format.
 
 Builds on these great packages:
@@ -16,12 +16,12 @@ Builds on these great packages:
 
 ### Installation
 
-loopback-jsonapi-redis-cache requires [Node.js](https://nodejs.org/) v4+ to run.
+loopback-jsonapi-redis-mixin requires [Node.js](https://nodejs.org/) v4+ to run.
 
  Install using npm
 
 ```
-$ npm install loopback-jsonapi-redis-cache --save
+$ npm install loopback-jsonapi-redis-mixin --save
 ```
 
 You can statically define things if you want...
@@ -56,7 +56,7 @@ Add to /server/model-config.json
 ```
     "mixins": [
       ...
-      "../node_modules/loopback-jsonapi-redis-cache"
+      "../node_modules/loopback-jsonapi-redis-mixin"
       ...
     ]
 ```
